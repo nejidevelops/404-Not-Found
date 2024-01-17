@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 *{
     padding: 0;
@@ -9,27 +9,66 @@
 
 body{
     position: relative;
+    padding: 40px 70px 0 70px;
 }
 
-.nav nav h3{
-    position: absolute;
-    width: 133px;
-    height: 25px;
-    left: 77px;
-    top: 40px;
-    font-family: 'Inconsolata', monospace;
-    font-size: 24px;
+main {
+    height: 90dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.nav h3 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
     font-weight: 700;
-    line-height: 25px;
-    letter-spacing: -0.08em;
-    text-align: left;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #333333;
 }
 
-.hero .scarecrow-image{
-    margin-top: 5%;
+.hero {
+    display: flex;
+    padding-top: 85px;
+    gap: 2rem;
 }
 
 .hero .scarecrow-image img{
     width: 539.22px;
-    height: 447.43px;
-} */
+    height: 377.43px;
+}
+
+.hero h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 36px;
+}
+
+.hero p {
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+.footer {
+    text-align: center;
+}
